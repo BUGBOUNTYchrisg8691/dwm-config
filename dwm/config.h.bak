@@ -34,6 +34,7 @@ static const char *const autostart[] = {
     "nitrogen", "--restore", "&", NULL,
     "getstatusbarobjects", NULL,
     "start-pulseaudio-x11", "&", NULL,
+    "startaudio.sh", NULL,
 	NULL /* terminate */
 };
 

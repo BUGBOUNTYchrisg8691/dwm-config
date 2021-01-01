@@ -33,8 +33,8 @@ static const char *const autostart[] = {
     "picom", "-f", NULL,
     "nitrogen", "--restore", "&", NULL,
     "getstatusbarobjects", NULL,
-    "start-pulseaudio-x11", "&", NULL,
-    "startaudio.sh", NULL,
+    // "start-pulseaudio-x11", "&", NULL,
+    // "startaudio.sh", NULL,
 	NULL /* terminate */
 };
 
