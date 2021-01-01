@@ -1,0 +1,52 @@
+#!/bin/bash
+
+function getdatetime() {
+  datetime="$(date +"%A, %B %d - %H:%M")"
+  timeicon=" "
+
+  echo -e "$timeicon$datetime"
+}
+
+function getupdatecount() {
+    updatecount=`checkupdates | wc -l`
+    updateicon="  "
+
+    echo -e "$updateicon$updatecount"
+}
+
+function getbatterystatus() {
+    n=90
+    sf=75
+    f=50
+    tf=25
+    t=10
+    full="   "
+    tre="   "
+    half="   "
+    quart="   "
+    empty="   "
+    charge="  "
+    perc=$(cat /sys/class/power_supply/BAT0/capacity)
+    stat=$(cat /sys/class/power_supply/BAT0/status)
+
+    if [ "$stat" = "Charging" ]; then
+        echo -e "$charge$perc%"
+    elif (( "$perc" >= "$n" )); then
+        echo -e "$full$perc%"
+    elif (( "$perc" >= "$sf" )); then
+        echo -e "$tre$perc%"
+    elif (( "$perc" >= "$f" )); then
+        echo -e "$half$perc%"
+    elif (( "$perc" >= "$tf" )); then
+        echo -e "$quart$perc%"
+    elif (( "$perc" >= "$t" )); then
+        echo -e "$empty$perc%"
+    else
+        echo -e "ERROR"
+    fi
+}
+
+while true; do
+    xsetroot -name "|$(getbatterystatus) | $(getupdatecount) | $(getdatetime) "
+  sleep 10s  # Update every ten seconds
+done
