@@ -1,0 +1,6 @@
+/home/chrisg/neovim/.deps/usr/lib/libluv.a
+/home/chrisg/neovim/.deps/usr/lib/pkgconfig/libluv.pc
+/home/chrisg/neovim/.deps/usr/include/luv/luv.h
+/home/chrisg/neovim/.deps/usr/include/luv/util.h
+/home/chrisg/neovim/.deps/usr/include/luv/lhandle.h
+/home/chrisg/neovim/.deps/usr/include/luv/lreq.h

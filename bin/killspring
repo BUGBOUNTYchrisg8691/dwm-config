@@ -1,0 +1,3 @@
+#!/bin/bash
+
+PID=$(lsof -i :2019 -t); kill -TERM $PID || kill -KILL $PID

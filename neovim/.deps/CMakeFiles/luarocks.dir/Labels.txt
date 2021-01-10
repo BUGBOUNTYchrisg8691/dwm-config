@@ -1,0 +1,13 @@
+# Target labels
+ luarocks
+# Source files and their labels
+/home/chrisg/neovim/.deps/CMakeFiles/luarocks
+/home/chrisg/neovim/.deps/CMakeFiles/luarocks.rule
+/home/chrisg/neovim/.deps/CMakeFiles/luarocks-complete.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-install.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-mkdir.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-download.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-update.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-patch.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-configure.rule
+/home/chrisg/neovim/.deps/build/src/luarocks-stamp/luarocks-build.rule

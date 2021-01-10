@@ -1,0 +1,6 @@
+rock_manifest = {
+   lib = {
+      ["mpack.so"] = "42e7e594dcb7d3d49224c7a05cd56ff7"
+   },
+   ["mpack-1.0.8-0.rockspec"] = "d0fa0c6f1263810366f958ef0bc67946"
+}

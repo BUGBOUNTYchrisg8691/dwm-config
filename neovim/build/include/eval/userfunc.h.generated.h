@@ -1,0 +1,58 @@
+#define DEFINE_FUNC_ATTRIBUTES
+#include "nvim/func_attr.h"
+#undef DEFINE_FUNC_ATTRIBUTES
+void func_init(void);
+char_u *get_lambda_name(void);
+int get_lambda_tv(char_u **arg, typval_T *rettv, _Bool evaluate);
+char_u *deref_func_name(const char *name, int *lenp, partial_T **const partialp, _Bool no_autoload) FUNC_ATTR_NONNULL_ARG(1, 2);
+void emsg_funcname(char *ermsg, const char_u *name);
+int get_func_tv(const char_u *name, int len, typval_T *rettv, char_u **arg, linenr_T firstline, linenr_T lastline, int *doesrange, int evaluate, partial_T *partial, dict_T *selfdict );
+ufunc_T *find_func(const char_u *name);
+void call_user_func(ufunc_T *fp, int argcount, typval_T *argvars, typval_T *rettv, linenr_T firstline, linenr_T lastline, dict_T *selfdict) FUNC_ATTR_NONNULL_ARG(1, 3, 4);
+void save_funccal(funccal_entry_T *entry);
+void restore_funccal(void);
+funccall_T *get_current_funccal(void);
+void set_current_funccal(funccall_T *fc);
+int func_call(char_u *name, typval_T *args, partial_T *partial, dict_T *selfdict, typval_T *rettv);
+int call_func(const char_u *funcname, int len, typval_T *rettv, int argcount_in, typval_T *argvars_in, ArgvFunc argv_func, linenr_T firstline, linenr_T lastline, int *doesrange, _Bool evaluate, partial_T *partial, dict_T *selfdict_in ) FUNC_ATTR_NONNULL_ARG(1, 3, 5, 9);
+char_u *trans_function_name(char_u **pp, _Bool skip, int flags, funcdict_T *fdp, partial_T **partial ) FUNC_ATTR_NONNULL_ARG(1);
+void ex_function(exarg_T *eap);
+int eval_fname_script(const char *const p);
+_Bool translated_function_exists(const char *name);
+_Bool function_exists(const char *const name, _Bool no_deref);
+char_u *get_user_func_name(expand_T *xp, int idx);
+void ex_delfunction(exarg_T *eap);
+void func_unref(char_u *name);
+void func_ptr_unref(ufunc_T *fp);
+void func_ref(char_u *name);
+void func_ptr_ref(ufunc_T *fp);
+void ex_return(exarg_T *eap);
+void ex_call(exarg_T *eap);
+int do_return(exarg_T *eap, int reanimate, int is_cmd, void *rettv);
+char_u *get_return_cmd(void *rettv);
+char_u *get_func_line(int c, void *cookie, int indent, _Bool do_concat);
+int func_has_ended(void *cookie);
+int func_has_abort(void *cookie);
+void make_partial(dict_T *const selfdict, typval_T *const rettv);
+char_u *func_name(void *cookie);
+linenr_T *func_breakpoint(void *cookie);
+int *func_dbg_tick(void *cookie);
+int func_level(void *cookie);
+int current_func_returned(void);
+_Bool free_unref_funccal(int copyID, int testing);
+funccall_T *get_funccal(void);
+hashtab_T *get_funccal_local_ht(void);
+dictitem_T *get_funccal_local_var(void);
+hashtab_T *get_funccal_args_ht(void);
+dictitem_T *get_funccal_args_var(void);
+void list_func_vars(int *first);
+dict_T *get_current_funccal_dict(hashtab_T *ht);
+hashitem_T *find_hi_in_scoped_ht(const char *name, hashtab_T **pht);
+dictitem_T *find_var_in_scoped_ht(const char *name, const size_t namelen, int no_autoload);
+_Bool set_ref_in_previous_funccal(int copyID);
+_Bool set_ref_in_call_stack(int copyID);
+_Bool set_ref_in_functions(int copyID);
+_Bool set_ref_in_func_args(int copyID);
+_Bool set_ref_in_func(char_u *name, ufunc_T *fp_in, int copyID);
+char_u *register_cfunc(cfunc_T cb, cfunc_free_T cb_free, void *state);
+#include "nvim/func_attr.h"

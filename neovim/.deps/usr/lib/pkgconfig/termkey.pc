@@ -1,0 +1,8 @@
+libdir=/home/chrisg/neovim/.deps/usr/lib
+includedir=/home/chrisg/neovim/.deps/usr/include
+
+Name: termkey
+Description: Abstract terminal key input library
+Version: 0.22
+Libs: -L${libdir} -ltermkey
+Cflags: -I${includedir}

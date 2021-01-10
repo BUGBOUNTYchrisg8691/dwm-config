@@ -1,0 +1,16 @@
+# ninja log v5
+13	335	1610156457595096373	CMakeFiles/msgpackc-static.dir/src/version.c.o	a0f581b0460872c7
+24	340	1610156457599096422	CMakeFiles/msgpackc-static.dir/src/vrefbuffer.c.o	7fc5fb387e151509
+36	447	1610156457707097751	CMakeFiles/msgpackc-static.dir/src/zone.c.o	18b3e304f852bb42
+0	654	1610156457915100311	CMakeFiles/msgpackc-static.dir/src/objectc.c.o	10dc4669907e1a11
+340	665	1610156457923100408	CMakeFiles/msgpackc.dir/src/version.c.o	29100c3b4953d3dd
+447	809	1610156458067102180	CMakeFiles/msgpackc.dir/src/vrefbuffer.c.o	e637127d852b2527
+50	832	1610156458091102476	CMakeFiles/msgpackc.dir/src/objectc.c.o	a5623e1b89c2c4e4
+654	1026	1610156458287104886	CMakeFiles/msgpackc.dir/src/zone.c.o	868ddcac59ca9f06
+12	1083	1610156458343105575	CMakeFiles/msgpackc-static.dir/src/unpack.c.o	2eef19ba35f37fc9
+1083	1132	1610156458391106165	libmsgpackc.a	939e0a6919346cfd
+335	1200	1610156458459107002	CMakeFiles/msgpackc.dir/src/unpack.c.o	df8046a6c614b202
+1200	1249	1610156458511107642	libmsgpackc.so.2.0.0	426537ca1a141660
+1249	1280	1610156458511107642	libmsgpackc.so.2	7d1fe98e7f402fac
+1249	1280	1610156458511107642	libmsgpackc.so	7d1fe98e7f402fac
+2	76	0	CMakeFiles/install.util	c90a46ba9b4abaf3

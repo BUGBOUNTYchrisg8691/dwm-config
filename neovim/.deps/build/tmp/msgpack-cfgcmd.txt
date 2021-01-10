@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;/home/chrisg/neovim/.deps/build/src/msgpack;-DMSGPACK_ENABLE_CXX=OFF;-DMSGPACK_BUILD_TESTS=OFF;-DMSGPACK_BUILD_EXAMPLES=OFF;-DCMAKE_INSTALL_PREFIX=/home/chrisg/neovim/.deps/usr;-DCMAKE_C_COMPILER=/usr/bin/cc;-DCMAKE_BUILD_TYPE=Release;-DCMAKE_C_FLAGS:STRING= -fPIC;-DCMAKE_GENERATOR=Ninja'

@@ -1,0 +1,13 @@
+# Target labels
+ gperf
+# Source files and their labels
+/home/chrisg/neovim/.deps/CMakeFiles/gperf
+/home/chrisg/neovim/.deps/CMakeFiles/gperf.rule
+/home/chrisg/neovim/.deps/CMakeFiles/gperf-complete.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-install.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-mkdir.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-download.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-update.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-patch.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-configure.rule
+/home/chrisg/neovim/.deps/build/src/gperf-stamp/gperf-build.rule

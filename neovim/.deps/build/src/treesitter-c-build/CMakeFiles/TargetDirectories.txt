@@ -1,0 +1,7 @@
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/install/strip.dir
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/install/local.dir
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/edit_cache.dir
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/install.dir
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/list_install_components.dir
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/rebuild_cache.dir
+/home/chrisg/neovim/.deps/build/src/treesitter-c-build/CMakeFiles/parser.dir

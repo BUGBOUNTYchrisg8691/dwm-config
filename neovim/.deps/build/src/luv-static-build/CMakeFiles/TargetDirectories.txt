@@ -1,0 +1,7 @@
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/install/strip.dir
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/install/local.dir
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/install.dir
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/list_install_components.dir
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/rebuild_cache.dir
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/edit_cache.dir
+/home/chrisg/neovim/.deps/build/src/luv-static-build/CMakeFiles/luv.dir

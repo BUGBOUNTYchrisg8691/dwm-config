@@ -1,7 +1,0 @@
-# these files are ignored by git.
-*.html
-!/*.html
-*.gph
-!/*.gph
-build-page
-test

@@ -1,0 +1,12 @@
+prefix=/home/chrisg/neovim/.deps/usr
+exec_prefix=${prefix}
+libdir=/home/chrisg/neovim/.deps/usr/lib
+includedir=/home/chrisg/neovim/.deps/usr/include/luv
+
+Name: libluv
+Version: 1.30.1
+Description: Bare and full libuv bindings for Lua/LuaJIT.
+URL: https://github.com/luvit/luv
+
+Libs: -L${libdir} -lluv 
+Cflags: -I${includedir}

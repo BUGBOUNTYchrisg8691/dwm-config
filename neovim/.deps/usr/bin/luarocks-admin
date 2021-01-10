@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LUAROCKS_SYSCONFDIR='/home/chrisg/neovim/.deps/usr/etc/luarocks' exec '/home/chrisg/neovim/.deps/usr/bin/luajit' -e 'package.path="/home/chrisg/neovim/.deps/usr/share/lua/5.1/?.lua;/home/chrisg/neovim/.deps/usr/share/lua/5.1/?/init.lua;"..package.path;package.cpath="/home/chrisg/neovim/.deps/usr/lib/lua/5.1/?.so;"..package.cpath;local k,l,_=pcall(require,"luarocks.loader") _=k and l.add_context("luarocks","3.2.1-1")' '/home/chrisg/neovim/.deps/usr/lib/luarocks/rocks-5.1/luarocks/3.2.1-1/bin/luarocks-admin' "$@"

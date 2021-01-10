@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Paired with nitrogen.go, checks if DWM is the current window manager
+# and if so, runs nitrogen to set background
+
+picom -f &
+nitrogen --restore &
+# pulseaudio --start &
+# conky | dwm-setstatus
+
+# touch ~/runnitroran.txt

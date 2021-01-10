@@ -1,0 +1,1 @@
+cmd='/home/chrisg/neovim/.deps/build/src/luarocks/configure;--prefix=/home/chrisg/neovim/.deps/usr;--force-config;--with-lua=/home/chrisg/neovim/.deps/usr;--with-lua-include=/home/chrisg/neovim/.deps/usr/include/luajit-2.1;--with-lua-interpreter=luajit'

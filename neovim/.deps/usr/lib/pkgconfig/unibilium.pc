@@ -1,0 +1,9 @@
+libdir=/home/chrisg/neovim/.deps/usr/lib
+includedir=/home/chrisg/neovim/.deps/usr/include
+version=2.0.0
+
+Name: unibilium
+Description: terminfo parser and utility functions
+Version: ${version}
+Libs: -L${libdir} -lunibilium
+Cflags: -I${includedir}

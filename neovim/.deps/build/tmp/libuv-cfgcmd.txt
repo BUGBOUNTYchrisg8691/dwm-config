@@ -1,0 +1,1 @@
+cmd='sh;/home/chrisg/neovim/.deps/build/src/libuv/autogen.sh;&&;/home/chrisg/neovim/.deps/build/src/libuv/configure;--with-pic;--disable-shared;--prefix=/home/chrisg/neovim/.deps/usr;--libdir=/home/chrisg/neovim/.deps/usr/lib;CC=/usr/bin/cc;MAKE=/usr/bin/make'

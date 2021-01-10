@@ -1,0 +1,1 @@
+/home/chrisg/neovim/.deps/build/src/libuv/test/fixtures/lorem_ipsum.txt
