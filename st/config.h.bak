@@ -8,7 +8,7 @@
 // static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 //static char *font = "FiraCode Nerd Font:style=Medium:pixelsize=14:antialias=true:autohint=true";
 //static char *font = "Fira Code iCursive S12:style=Italic:pixelsize=18:antialias=true:autohint=true";
-static char *font = "Iosevka Term,Iosevka Nerd Font:style=Bold Italic:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Iosevka Term,Iosevka Nerd Font:style=Bold Italic:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*

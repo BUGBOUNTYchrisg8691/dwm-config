@@ -38,7 +38,6 @@ static const char *const autostart[] = {
     "getstatusbarobjects", NULL,
     "start-pulseaudio-x11", "&", NULL,
     "startaudio.sh", NULL,
-    "wmname LG3D", NULL,
 	  NULL /* terminate */
 };
 
