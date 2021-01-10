@@ -1,5 +1,7 @@
 #!/bin/bash
 
+err=""
+
 function getdatetime() {
   datetime="$(date +"%A, %B %d - %H:%M")"
   timeicon=" "
@@ -17,8 +19,7 @@ function getupdatecount() {
 function getbatterystatus() {
     n=90
     sf=75
-    f=50
-    tf=25
+    f=40
     t=10
     full="   "
     tre="   "
@@ -37,16 +38,36 @@ function getbatterystatus() {
         echo -e "$tre$perc%"
     elif (( "$perc" >= "$f" )); then
         echo -e "$half$perc%"
-    elif (( "$perc" >= "$tf" )); then
-        echo -e "$quart$perc%"
     elif (( "$perc" >= "$t" )); then
+        echo -e "$quart$perc%"
+    elif (( "$perc" < "$t" )); then
         echo -e "$empty$perc%"
     else
-        echo -e "ERROR"
+        echo -e "ERROR$err"
+    fi
+}
+
+function getvolumelevel() {
+    # level=$(amixer get Master | grep "%" | awk "{print $4}" | sed -e "s/\[//" -e "s/\]//" -e "s/%//")
+    level=$(amixer get Master | grep "%" | awk '{print $4}' | sed -e "s/\[//" -e "s/\]//" -e "s/%//")
+    hi="  "
+    mid="  "
+    low="  "
+    n=70
+    z=0
+
+    if (( "$level" >= "$n" )); then
+        echo -e "$hi$level"
+    elif (( "$level" < "$n" )); then
+        echo -e "$mid$level"
+    elif (( "$level" = 0 )); then
+        echo -e "$low$level"
+    else
+        echo -e "ERROR$err"
     fi
 }
 
 while true; do
-    xsetroot -name "|$(getbatterystatus) | $(getupdatecount) | $(getdatetime) "
-  sleep 10s  # Update every ten seconds
+    xsetroot -name "$(getvolumelevel) |$(getbatterystatus) | $(getupdatecount) | $(getdatetime) "
+  sleep 1m  # Update every ten seconds
 done

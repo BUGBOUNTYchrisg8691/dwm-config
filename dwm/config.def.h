@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-
+#include <X11/XF86keysym.h>
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gap pixel between windows */
@@ -9,6 +9,9 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const int startontag         = 1;        /* 0 means no tag active on start */
 static const int user_bh            = 30;       /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char dmenu_h[]         = "30";       /* dmenu height; should match user_bh, unless dmenu patched to spawn in middle */
+static const char *upvol[]          = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[]        = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[]        = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
 // static const char *fonts[]          = { "monospace:size=10" };
 static const char *fonts[]          = { "FiraCode Nerd Font:style=Medium:size=8" };
 static const char dmenufont[]       = "FiraCode Nerd Font:style=Medium:size=8";
@@ -35,7 +38,7 @@ static const char *const autostart[] = {
     "getstatusbarobjects", NULL,
     "start-pulseaudio-x11", "&", NULL,
     "startaudio.sh", NULL,
-	NULL /* terminate */
+	  NULL /* terminate */
 };
 
 /* tagging */
@@ -66,7 +69,8 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod1Mask
+// #define MODKEY Mod1Mask
+#define MODKEY Mod4Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      comboview,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -113,6 +117,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+	{ 0,                            XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
+	{ 0,                            XF86XK_AudioMute, spawn, {.v = mutevol } },
+	{ 0,                            XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
